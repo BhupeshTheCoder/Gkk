@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+  font-family: Quicksand, sans-serif;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* Background color to prevent content from showing through */
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distributes space between logo and items */
+  align-items: center; /* Vertically centers items */
+  width: 100%;
+  color: white;
+  position: relative; /* Positioning context for absolute elements */
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem; /* Added padding for better spacing */
+}
+
+.navbar-brand img {
+  height: 35px;
+}
+
+.navbar-text {
+  font-family: Quicksand, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  position: absolute; /* Positioning the text absolutely */
+  right: 0; /* Align text to the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust vertical centering */
+}
+
+.navbar-text:hover {
+  color: #ffcc00;
+}
+
+.nav-link {
+  font-family: Quicksand, sans-serif;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
+  margin-left: auto; /* Pushes the toggler to the right */
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar-text {
+    font-size: 1.3rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-text {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-text {
+    font-size: 1rem;
+    position: static; /* Remove absolute positioning */
+    text-align: center; /* Center text in its container */
+    width: 100%; /* Ensure the text takes full width */
+    margin-top: 0.5rem; /* Add some space on top */
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .navbar-collapse {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items */
+  }
+}
