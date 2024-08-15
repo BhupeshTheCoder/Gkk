@@ -1,0 +1,152 @@
+.login-component{
+  margin-bottom: 180px;
+}
+
+.signup-component{
+  margin-bottom: 240px;
+}
+
+.navbar {
+  color: white;
+  border-radius: 10px;
+}
+
+.image {
+  border-radius: 20px;
+}
+
+.navbar-text {
+  font-family: Quicksand, san-serif;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  position: sticky;
+}
+
+.nav-link {
+  font-family: Quicksand, san-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon{
+  background-color:white;
+}
+
+.main-footer{
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: #383737;
+  padding: 0.5rem;
+  /* position:relative; */
+  /* bottom: 0; */
+  width: 100%;
+}
+
+.user-component{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.login-form{
+  width: 40%;
+  /* max-width:500px; */
+  padding: 15px;
+  margin: auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  /* height: 95%; */
+  border-radius: 20px;
+}
+.signup-form{
+  /* width: 100%;
+  max-width:500px;
+  padding: 15px;
+  margin: auto;
+  margin-top:20px;
+  height: 98%;
+  border: 4px solid grey; */
+
+  width: 60%;
+  /* max-width:500px; */
+  padding: 15px;
+  margin: auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  /* height: 95%; */
+  border-radius: 20px;
+}
+
+.payment-form{
+  width: 50%;
+  max-width:300px;
+  padding: 15px;
+  margin: auto;
+  margin-top:20px;
+  height: 98%;
+  border: 4px solid grey;
+}
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 10px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:lightgray;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+#img{
+  border-radius: 10px;
+}
